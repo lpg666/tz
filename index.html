@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        *{padding: 0; margin: 0;}
+        .center{ min-height: 800px;}
+        .center .preview{ display: none;}
+        .box,.lyrow{ position: relative;}
+        .column{padding: 10px;}
+        .ui-sortable-placeholder { outline: 1px dashed #ddd; visibility: visible!Important; border-radius: 4px;}
+    </style>
+
+</head>
+<body class="edit">
+    <p>栅格</p>
+    <div class="sidebar-nav">
+        <div class="lyrow">
+            <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i> 删除</a>
+            <span class="drag label label-default"><i class="glyphicon glyphicon-move"></i> 拖动</span>
+            <div class="preview"><input type="text" value="12" class="form-control"></div>
+            <div class="view">
+                <div class="row clearfix">
+                    <div class="col-md-12 column"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lyrow">
+            <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i> 删除</a>
+            <span class="drag label label-default"><i class="glyphicon glyphicon-move"></i> 拖动</span>
+            <div class="preview"><input type="text" value="6 6" class="form-control"></div>
+            <div class="view">
+                <div class="row clearfix">
+                    <div class="col-md-6 column"></div>
+                    <div class="col-md-6 column"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lyrow">
+            <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i> 删除</a>
+            <span class="drag label label-default"><i class="glyphicon glyphicon-move"></i> 拖动</span>
+            <div class="preview"><input type="text" value="9 3" class="form-control"></div>
+            <div class="view">
+                <div class="row clearfix">
+                    <div class="col-md-9 column"></div>
+                    <div class="col-md-3 column"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lyrow">
+            <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i> 删除</a>
+            <span class="drag label label-default"><i class="glyphicon glyphicon-move"></i> 拖动</span>
+            <div class="preview"><input type="text" value="8 4" class="form-control"></div>
+            <div class="view">
+                <div class="row clearfix">
+                    <div class="col-md-8 column"></div>
+                    <div class="col-md-4 column"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lyrow">
+            <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i> 删除</a>
+            <span class="drag label label-default"><i class="glyphicon glyphicon-move"></i> 拖动</span>
+            <div class="preview"><input type="text" value="4 4 4" class="form-control"></div>
+            <div class="view">
+                <div class="row clearfix">
+                    <div class="col-md-4 column"></div>
+                    <div class="col-md-4 column"></div>
+                    <div class="col-md-4 column"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lyrow">
+            <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i> 删除</a>
+            <span class="drag label label-default"><i class="glyphicon glyphicon-move"></i> 拖动</span>
+            <div class="preview"><input type="text" value="3 9" class="form-control"></div>
+            <div class="view">
+                <div class="row clearfix">
+                    <div class="col-sm-3 col-md-3 column"></div>
+                    <div class="col-sm-9 col-md-9 column"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lyrow">
+            <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i> 删除</a>
+            <span class="drag label label-default"><i class="glyphicon glyphicon-move"></i> 拖动</span>
+            <div class="preview"><input type="text" value="2 6 4" class="form-control"></div>
+            <div class="view">
+                <div class="row clearfix">
+                    <div class="col-md-2 column"></div>
+                    <div class="col-md-6 column"></div>
+                    <div class="col-md-4 column"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <p>组件</p>
+        <ul>
+            <li>
+                <div class="box box-element">
+                    <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> 删除</a>
+                    <span class="drag label label-default"><i class="glyphicon glyphicon-move"></i> 拖动</span>
+                    <span class="configuration">
+                    <span class="btn-group btn-group-xs">
+                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">对齐 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active" ><a href="#" rel="">默认</a></li>
+                            <li class="" ><a href="#" rel="text-left">左对齐</a></li>
+                            <li class="" ><a href="#" rel="text-center">居中</a></li>
+                            <li class="" ><a href="#" rel="text-right">右对齐</a></li>
+                        </ul>
+                    </span>
+                    <span class="btn-group btn-group-xs">
+                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">强调样式 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active" ><a href="#" rel="">默认</a></li>
+                            <li class="" ><a href="#" rel="text-muted">灰色</a></li>
+                            <li class="" ><a href="#" rel="text-primary">蓝色</a></li>
+                            <li class="" ><a href="#" rel="text-success">绿色</a></li>
+                            <li class="" ><a href="#" rel="text-info">青色</a></li>
+                            <li class="" ><a href="#" rel="text-warning">橙色</a></li>
+                            <li class="" ><a href="#" rel="text-danger">红色</a></li>
+                        </ul>
+                    </span>
+                    <a class="btn btn-xs btn-default" href="#" rel="lead">加大</a>
+                </span>
+                    <div class="preview">段落</div>
+                    <div class="view">
+                        <p contenteditable="true">这里是一个段落</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="center">
+
+    </div>
+
+
+<!-- 脚本 -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+<script>
+    //变量
+    var stopsave = 0;
+    var startdrag = 0;
+    //初始化
+    function initContainer(){
+        $(".center, .center .column").sortable({
+            connectWith: ".column",
+            opacity: .35,
+            handle: ".drag",
+            start: function(e,t) {
+                if (!startdrag) stopsave++;
+                startdrag = 1;
+            },
+            stop: function(e,t) {
+                if(stopsave>0) stopsave--;
+                startdrag = 0;
+            }
+        });
+        //附带属性
+        configurationElm();
+    }
+    function configurationElm(e, t) {
+        $(".center").delegate(".configuration > a", "click", function(e) {
+            e.preventDefault();
+            var t = $(this).parent().next().next().children();
+            $(this).toggleClass("active");
+            t.toggleClass($(this).attr("rel"));
+        });
+        $(".center").delegate(".configuration .dropdown-menu a", "click", function(e) {
+            e.preventDefault();
+            var t = $(this).parent().parent();
+            var n = t.parent().parent().next().next().children();
+            t.find("li").removeClass("active");
+            $(this).parent().addClass("active");
+            var r = "";
+            t.find("a").each(function() {
+                r += $(this).attr("rel") + " "
+            });
+            t.parent().removeClass("open");
+            n.removeClass(r);
+            n.addClass($(this).attr("rel"));
+        });
+    }
+
+
+    $(document).ready(function() {
+        //拖动栅格
+        $(".sidebar-nav .lyrow").draggable({        //拖动的容器
+            connectToSortable: ".center",           //放置容器
+            helper: "clone",                        //用于拖拽显示,设置为"clone",元素将被克隆,且克隆将被拖拽.
+            handle: ".drag",                        //限制开始拖拽的元素，容器的后代元素.drag才允许被拖拽
+            start: function(e,t) {                  //1,1
+                if (!startdrag) stopsave++;
+                startdrag = 1;
+            },
+            drag: function(e, t) {                  //设置400宽度
+                t.helper.width(400);
+            },
+            stop: function(e, t) {                  //0,0
+                $(".center .column").sortable({
+                    opacity: .35,
+                    connectWith: ".column",
+                    start: function(e,t) {
+                        if (!startdrag) stopsave++;
+                        startdrag = 1;
+                    },
+                    stop: function(e,t) {
+                        if(stopsave>0) stopsave--;
+                        startdrag = 0;
+                    }
+                });
+                if(stopsave>0) stopsave--;
+                startdrag = 0;
+            }
+        });
+
+        //拖动组件
+        $(".sidebar-nav .box").draggable({
+            connectToSortable: ".column",   //允许 draggable 放置在指定的 .column 上
+            helper: "clone",				//允许一个 helper 元素用于拖拽显示. 设置为 "clone", 元素将被克隆,且克隆将被拖拽.
+            handle: ".drag",				//限制开始拖拽,除非鼠标在指定的元素上按下,只有可拖拽（draggable）元素的后代元素才允许被拖拽
+            start: function(e,t) {			//当拖拽开始时触发
+                if (!startdrag) stopsave++;
+                startdrag = 1;
+            },
+            drag: function(e, t) {			//拖拽期间当鼠标移动时触发
+                t.helper.width(400)
+            },
+            stop: function() {				//当拖拽停止时触发
+                //handleJsIds();              //处理节点
+                if(stopsave>0) stopsave--;
+                startdrag = 0;
+            }
+        });
+        //
+
+        //
+        initContainer();
+
+        //处理节点函数
+        function handleJsIds() {
+            handleModalIds();
+            handleAccordionIds();
+            handleCarouselIds();
+            handleTabsIds()
+        }
+        function handleAccordionIds() {
+            var e = $(".center #myAccordion");
+            var t = randomNumber();
+            var n = "accordion-" + t;
+            var r;
+            e.attr("id", n);
+            e.find(".accordion-group").each(function(e, t) {
+                r = "accordion-element-" + randomNumber();
+                $(t).find(".accordion-toggle").each(function(e, t) {
+                    $(t).attr("data-parent", "#" + n);
+                    $(t).attr("href", "#" + r)
+                });
+                $(t).find(".accordion-body").each(function(e, t) {
+                    $(t).attr("id", r)
+                })
+            })
+        }
+        function handleCarouselIds() {
+            var e = $(".center #myCarousel");
+            var t = randomNumber();
+            var n = "carousel-" + t;
+            e.attr("id", n);
+            e.find(".carousel-indicators li").each(function(e, t) {
+                $(t).attr("data-target", "#" + n)
+            });
+            e.find(".left").attr("href", "#" + n);
+            e.find(".right").attr("href", "#" + n)
+        }
+        function handleModalIds() {
+            var e = $(".center #myModalLink");
+            var t = randomNumber();
+            var n = "modal-container-" + t;
+            var r = "modal-" + t;
+            e.attr("id", r);
+            e.attr("href", "#" + n);
+            e.next().attr("id", n)
+        }
+        function handleTabsIds() {
+            var e = $(".center #myTabs");
+            var t = randomNumber();
+            var n = "tabs-" + t;
+            e.attr("id", n);
+            e.find(".tab-pane").each(function(e, t) {
+                var n = $(t).attr("id");
+                var r = "panel-" + randomNumber();
+                $(t).attr("id", r);
+                $(t).parent().parent().find("a[href=#" + n + "]").attr("href", "#" + r)
+            })
+        }
+        function randomNumber() {
+            return randomFromInterval(1, 1e6)
+        }
+        function randomFromInterval(e, t) {
+            return Math.floor(Math.random() * (t - e + 1) + e)
+        }
+    });
+</script>
